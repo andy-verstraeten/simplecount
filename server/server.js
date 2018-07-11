@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const morgan = require('morgan')
 
-const apiRouter = require('./apiRouter')
+const apiRouter = require('./routes/apiRouter')
 
 
 const port = 3000

@@ -18,7 +18,7 @@ export class CurrentTrackerService {
   }
 
   getSync(): Tracker {
-    return this.currentTrackerTest;
+    return this.currentTrackerData;
   }
 
 }
