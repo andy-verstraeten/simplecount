@@ -1,0 +1,23 @@
+ul {
+  list-style: none;
+
+  li{
+    border-bottom: solid 1px lightgrey;
+    text-align: left;
+
+    h5 {
+      padding-top: .5em;
+    }
+
+    h5,p {
+      padding-left: 1em;
+    }
+    p {
+      color: lightgrey;
+    }
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}

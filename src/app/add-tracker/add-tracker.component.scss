@@ -1,0 +1,26 @@
+.header-container {
+  i, h3 {
+    display: inline-block;
+  }
+
+  i {
+    font-size: 2em;
+  }
+  .back-button {
+    position: absolute;
+    left: .5em;
+    top: .5em;
+  }
+
+  .confirm-button {
+    position: absolute;
+    right: .5em;
+    top: .5em;
+  }
+
+
+
+}
+
+
+

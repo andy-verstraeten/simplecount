@@ -1,0 +1,22 @@
+<div class="main-container">
+  <div class="header-container">
+    <i class="fa fa-arrow-left back-icon" (click)="goBack()"></i>
+  <h3>New expense</h3>
+  <i *ngIf="expenseForm.value.titleInput !==''" class="fa fa-check check-icon" (click)="onAddExpense(expenseForm)"></i>
+  </div>
+  <form class="new-expense-form" (ngSubmit)="onAddExpense(expenseForm)"  #expenseForm="ngForm">
+      <label for="titleInput">Title:</label>
+      <input type="text" name="titleInput" class="form-control" ngModel>
+      <label for="amountInput">Amount:</label>
+      <input type="text" name="amountInput" class="form-control" ngModel>
+      <label for="dateInput">Date:</label>
+      <input type="date" name="dateInput" class="form-control">
+      <label for="paidBy">Paid by:</label>
+      <select name="paidBy" class="form-control" ngModel>
+        <option *ngFor="let participant of tracker.participants"> {{ participant}}</option>
+      </select>
+
+     <app-participant-selector [participants]="tracker.participants" ngModel name="paidFor"></app-participant-selector>
+  </form>
+
+</div>

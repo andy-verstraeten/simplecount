@@ -1,0 +1,38 @@
+.header-container {
+  text-align: left;
+  .back-icon {
+    padding-left: 1em;
+    padding-right: 2em;
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  .check-icon {
+    position: absolute;
+    right: .5em;
+    top: .5em;
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  h3 {
+    display: inline-block;
+  }
+
+}
+
+.new-expense-form {
+  padding: 1em;
+  text-align: left;
+
+  .form-title {
+    margin-top: 1em;
+  }
+
+  label:not(:first-of-type) {
+    padding-top: 3px;
+  }
+
+
+
+}

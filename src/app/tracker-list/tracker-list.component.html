@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let tracker of trackers">
+  <a [routerLink]="['/edit-tracker', tracker._id]">
+      <h5>{{ tracker.name }}</h5>
+      <p *ngIf="tracker.description; else NoDescriptionBlock"> {{ tracker.description }}</p>
+      <ng-template #NoDescriptionBlock><p>No description</p></ng-template>
+  </a>
+    </li>
+</ul>

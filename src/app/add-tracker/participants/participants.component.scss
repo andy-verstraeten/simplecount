@@ -1,0 +1,17 @@
+ul {
+  margin: 1em;
+  list-style: none;
+
+  li > .fa-window-close {
+    float: right;
+    font-size: 1.2em;
+  }
+}
+.add-container {
+  input {
+    width: 70%;
+  }
+  input, button {
+    display: inline-block;
+  }
+}

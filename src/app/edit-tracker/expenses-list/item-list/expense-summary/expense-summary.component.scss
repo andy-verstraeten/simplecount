@@ -1,0 +1,28 @@
+a:hover {
+  text-decoration: none;
+}
+.expense-summary {
+  position: relative;
+  height: 4em;
+  padding: .5em 0;
+  h5 {
+    color:lightblue;
+
+  }
+
+  .name {
+    margin:0;
+    text-align: left;
+  }
+
+  .paid-by {
+    text-align: left;
+    color: lightgrey;
+  }
+
+  .amount {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
+}

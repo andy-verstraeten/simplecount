@@ -1,0 +1,11 @@
+ <div class="form-title for-who-title">
+    <input type="checkbox" name="allCheckbox" class="form-control">
+      <h5>For whom</h5>
+    </div>
+ <div class="for-who-container">
+        <ul>
+          <li *ngFor="let participant of participants">
+            <app-participant-option [participantName]="participant"  (changeEvent)="updateList($event)"></app-participant-option>
+          </li>
+       </ul>
+ </div>

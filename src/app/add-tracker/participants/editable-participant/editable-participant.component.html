@@ -1,0 +1,11 @@
+<div class="editable-participant" *ngIf="!editing; else editingBlock" (click)="toggleEditing()">
+  <span>{{ participant }}</span>
+</div>
+<ng-template #editingBlock>
+  <div class="editabe-participant">
+
+    <input type="text" class="form-control participant-input" [(ngModel)]="participant">
+    <i class="fa fa-check" (click)="nameChanged()"></i>
+
+  </div>
+</ng-template>

@@ -1,0 +1,7 @@
+<div class="expenses-list-container">
+<ul class="expenses-list">
+<li *ngFor="let expense of tracker.expenses">
+  <app-expense-summary [expense]="expense" [currency]="tracker.currency"></app-expense-summary>
+</li>
+</ul>
+</div>

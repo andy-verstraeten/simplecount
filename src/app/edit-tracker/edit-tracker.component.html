@@ -1,0 +1,28 @@
+<div class="main-container">
+  <div class="header-container">
+  <div class="top-row">
+  <a routerLink="/"><i class="fa fa-arrow-left"></i></a>
+  <div class="tracker-info">
+    <h3>{{ tracker.name }}</h3>
+    <small>
+      <ng-container *ngFor="let participant of tracker.participants; let i = index">
+      <span *ngIf="i<5"> {{ participant }}</span>
+      </ng-container>
+      <span *ngIf="tracker.participants.length > 5">...</span>
+    </small>
+   </div>
+  </div>
+  <nav class="view-nav">
+    <a class="nav-icon" routerLink="expenses" routerLinkActive="active-icon">
+      <i class="fa fa-list-alt"></i>
+      <h5>Expenses</h5>
+    </a>
+    <a class="nav-icon" routerLink="saldo" routerLinkActive="active-icon">
+    <i class="fa fa-exchange"></i>
+    <h5>Saldo</h5>
+  </a>
+  </nav>
+  </div>
+<router-outlet></router-outlet>
+</div>
+

@@ -1,0 +1,26 @@
+$primaryBg : #ebebeb;
+$secondaryColor: darkgrey;
+
+.saldo-container {
+  .saldo-list {
+    list-style: none;
+    background-color: $primaryBg;
+    padding: 0;
+    margin: 0;
+    li {
+      border-bottom: solid 1px $secondaryColor;
+    }
+  }
+}
+
+.p2p-container {
+  .title-container {
+    display: block;
+    width: 100vw;
+    background-color: $primaryBg;
+    h5 {
+      color: $secondaryColor;
+      padding-top: 1.3em;
+    }
+  }
+}

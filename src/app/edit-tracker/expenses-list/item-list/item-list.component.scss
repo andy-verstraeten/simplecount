@@ -1,0 +1,11 @@
+.expenses-list-container {
+  overflow-y: scroll;
+  height: 80vh;
+  .expenses-list {
+    list-style: none;
+    li {
+      border-bottom: solid grey 1px;
+    }
+  }
+
+}

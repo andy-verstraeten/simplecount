@@ -1,0 +1,12 @@
+.body-container {
+  display: block;
+  height: 600px;
+}
+
+.add-button {
+  position:absolute;
+  left: 50%;
+  bottom: 1.5em;
+  z-index: 10;
+  transform: translateX(-50%);
+}

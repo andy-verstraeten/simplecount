@@ -1,0 +1,41 @@
+.header-container {
+  height: auto;
+  .top-row {
+    padding-top: .5em;
+    text-align: left;
+    i.fa-arrow-left {
+      padding-left: 10vw;
+      font-size: 2em;
+      vertical-align: top;
+
+    }
+    i, .tracker-info {
+      display: inline-block;
+    }
+
+    .tracker-info {
+      h3 {
+        padding: 0 1em;
+      }
+    }
+  }
+
+  .view-nav {
+    display: inline-block;
+    width: 100%;
+    a {
+      display:inline-block;
+      width:45%;
+
+    }
+
+    .active-icon {
+      border-bottom: #ffb911 4px solid;
+    }
+  }
+}
+
+.main-container {
+  min-height: 100vh;
+}
+

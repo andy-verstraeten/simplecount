@@ -1,0 +1,34 @@
+.block {
+  height: 2em;
+  position: absolute;
+  z-index: 10;
+}
+
+.positive-block {
+  background-color: #69ffa5;
+  left: 0;
+  border-radius: 0  .3em .3em 0;
+}
+
+.negative-block {
+  background-color: #ff6d6f;
+  right: 0;
+  border-radius: .3em 0 0 .3em;
+}
+
+.saldo-value {
+  position: absolute;
+  z-index: 500;
+}
+
+.negative-saldo {
+  right: .5em;
+}
+
+.positive-saldo {
+  left: .5em;
+}
+
+.plus {
+  display: inline-block;
+}

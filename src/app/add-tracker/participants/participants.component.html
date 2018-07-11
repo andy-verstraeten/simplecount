@@ -1,0 +1,13 @@
+<form (ngSubmit)="addNewParticipant()">
+<ul class="participant-list">
+ <li *ngFor="let participant of participants">
+  <app-editable-participant [participant]="participant" (nameChangedEvent)="updateParticipant($event)"></app-editable-participant>
+  <i class="fa fa-window-close" (click)="deleteParticipant(participant)"></i>
+  </li>
+</ul>
+<div class="add-container">
+  <input type="text" class="form-control" name="newParticipant" [(ngModel)]="newParticipant">
+  <button class="btn btn-primary" type="submit">Add</button>
+</div>
+<p class="error-message" *ngIf="errorMessage !== ''">{{ errorMessage }}</p>
+</form>

@@ -1,0 +1,7 @@
+<a [routerLink]="expense._id">
+<div class="expense-summary">
+<h5 class="name"> {{ expense.name }}</h5>
+<p class="paid-by">Paid by <b>{{ expense.paidBy }}</b></p>
+<h5 class="amount"> {{ expense.amount }} {{ currency }}</h5>
+</div>
+</a>

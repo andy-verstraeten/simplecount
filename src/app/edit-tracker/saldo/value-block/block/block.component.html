@@ -1,0 +1,5 @@
+<div class="block" [ngClass]="blockClass" [ngStyle]="{'width.px': calcWidth()}">
+</div>
+<div class="saldo-value" [ngClass]="saldoClass">
+ <div *ngIf="saldo > 0" class="plus">+</div> {{ saldo }} {{ currency }}
+</div>

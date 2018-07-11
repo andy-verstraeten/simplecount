@@ -1,0 +1,19 @@
+<div class="participant-container" *ngIf="participantSaldo.saldo < 0; else positiveBlock">
+      <div class="half-container">
+        <app-block [saldo]="participantSaldo.saldo" [currency]="currency"></app-block>
+      </div>
+      <div class="half-container" [ngClass]="nameClass">
+        {{ participantSaldo.name }}
+      </div>
+
+    </div>
+<ng-template #positiveBlock>
+  <div class="participant-container">
+      <div class="half-container" [ngClass]="nameClass">
+            {{ participantSaldo.name }}
+      </div>
+      <div class="half-container">
+            <app-block [saldo]="participantSaldo.saldo" [currency]="currency"></app-block>
+      </div>
+   </div>
+</ng-template>

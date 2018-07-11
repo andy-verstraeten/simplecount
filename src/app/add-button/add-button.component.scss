@@ -1,0 +1,19 @@
+.add-button {
+  margin-right: .5em;
+  float: right;
+  position:relative;
+  display: inline-block;
+  height: 4em;
+  width: 4em;
+  background-color: #6382e2;
+  border-radius: 50%;
+
+  .fa-plus {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.4em;
+    color: white;
+  }
+}

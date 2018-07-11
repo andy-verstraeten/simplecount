@@ -1,0 +1,25 @@
+<div class="main-container">
+  <div class="header-container">
+    <a routerLink="/overview"><i class="fa fa-arrow-left back-button"></i></a>
+    <h3>New tracker</h3>
+    <i class="fa fa-check confirm-button" (click)="addTracker(newTrackerForm)"></i>
+  </div>
+  <form (ngSubmit)="addTracker(newTrackerForm)" #newTrackerForm="ngForm">
+  <div class="form-group">
+  <div class="form-group"></div>
+    <label for="titleInput">Title:</label>
+    <input type="text" id="titleInput" name="title" class="form-control" ngModel required>
+  </div>
+  <div class="form-group">
+  <input type="text" class="form-control" name="description" placeholder="Description" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="currency">Currency:</label>
+    <input type="text" id="currencyInput" name="currency" class="form-control" ngModel required>
+  </div>
+  <div class="form-title">
+    <h5>Participants</h5>
+  </div>
+  <app-participants [(participants)]="participants"></app-participants>
+  </form>
+</div>
